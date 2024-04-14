@@ -1,0 +1,80 @@
+<html>
+<head>
+<style>
+
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+#Div2
+ {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  color:white;
+  background-color: red;
+  display:none;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1><b>About ECOSYSTEM</b></h1>
+
+<button onclick="myFunction()">HIDE</button>
+
+<div id="myDIV">
+<p>Decreased production and increased costs: Food production and distribution
+ have not been able to catch up with the increasing population and hence the costs 
+ of production have increased. Inflation is the major consequence of over population.
+Inequitable income distribution: In the face of an increasing population, there is an
+ unequal distribution of income and inequalities within the country widen. Due to 
+ excessive number of individuals, the job is not valued appropriately which could 
+significantly bring down the value of the skill.</p>
+</div>
+<h1><b>Solutions</b></h1>
+
+<button onclick="myFunctions()">SHOW</button>
+
+<div id="Div2">
+<p>Decreased production and increased costs: Food production and distribution
+ have not been able to catch up with the increasing population and hence the costs 
+ of production have increased. Inflation is the major consequence of over population.
+Inequitable income distribution: In the face of an increasing population, there is an
+ unequal distribution of income and inequalities within the country widen. Due to 
+ excessive number of individuals, the job is not valued appropriately which could 
+significantly bring down the value of the skill.</p>
+</div>
+<script>
+	function myFunction() 
+  {
+	var x = document.getElementById("myDIV");
+	if (x.style.display === "none")
+  {
+    x.style.display = "block";
+  }
+	else 
+  {
+    x.style.display = "none";
+  }
+  }
+  function myFunctions()
+{  
+  var y = document.getElementById("Div2");
+	if (y.style.display === "none")
+  {
+    y.style.display = "block";
+  }
+	else 
+  {
+    y.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
+

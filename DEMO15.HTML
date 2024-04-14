@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+<body>
+<button onclick=demo()>CLICK ME</button>
+<p></p>
+<script>
+let demo=()=>
+{
+var arr=["SUMMER TRAINING","WINTER TRAINING", "APPRENTSHIP"]
+var c=["Red","Aqua","Orange"]
+var res="<select>"
+a=0;
+for(var i of arr)
+{
+//res=res+"<option style='background:red;'>"+i+"</option>"
+res=res+"<option style='color:"+c[a]+";'>"+i+"</option>"
+}
+res=res+"</select>"
+document.querySelector("p").innerHTML=res;
+}
+</script>
+</body>
+</html>

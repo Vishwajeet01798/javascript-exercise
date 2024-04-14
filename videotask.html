@@ -1,0 +1,100 @@
+<html>
+<head>
+<style>
+.img1
+{
+height:200px;
+width:300px;
+border:10px groove red;
+padding:10px;
+border-radius:10px;
+box-shadow:0px 0px 5px 2px black inset;
+margin:10px;
+}
+#modal
+{
+width:100%;
+min-height:750px;
+background:rgba(0,0,0,.6);
+position:fixed;
+top:0px;
+left:0px;
+display:block;
+}
+#minner
+{
+min-height:300px;
+width:600px;
+border-radius:10px;
+padding:25px;
+box-sizing:border-box;
+box-shadow:0px 0px 15px 2px white;
+background:white;
+margin-top:80px;
+}
+#imgMain
+{
+width:100%;
+}
+
+</style>
+</head>
+<body>
+<center>
+<h1>Image Gallery</h1>
+ <video  width="320" height="240" controls>
+ <source src="video/Party.mp4" id="demo(this)" onclick="demo(this)" type="video/mp4">
+</video>
+<video  width="320" height="240" controls>
+ <source src="video/moon.mp4" id="demo(this)" onclick="demo(this)" type="video/mp4">
+</video>
+<video width="320" height="240" controls>
+ <source src="video/c.mp4" onclick="demo(this)" type="video/mp4">
+</video>
+<video  width="320" height="240" controls>
+ <source src="video/d.mp4"id="demo(this)" onclick="demo(this)" type="video/mp4">
+</video>
+<video  width="320" height="240" controls>
+ <source src="video/Mushrooms.mp4" id="demo(this)" onclick="demo(this)" type="video/mp4">
+</video>
+<video  width="320" height="240" controls>
+ <source src="video/b.mp4" id="demo(this)" onclick="demo(this)" type="video/mp4">
+</video>
+<video  width="320" height="240" controls>
+ <source src="video/a.mp4" id="demo(this)" onclick="demo(this)" type="video/mp4">
+</video>
+<video  width="320" height="240" autoplay="true">
+ <source src="video/leaf.mp4" id="demo(this)" onclick="demo(this)" type="video/mp4">
+</video>
+
+
+<! Start Modal--->
+<div id="modal">
+<div id="minner">
+<div style="text-align:center; font-size:30px;">
+Video <b style="color:red;">Gallery</b>
+<a href="videotask.html">
+<b style="color:red; font-size:25px; float:right;">X</b>
+</div>
+<video  width="320" height="240" controls>
+ <source id="myVideo" src="video/leaf.mp4" type="video/mp4">
+</video>
+
+</div>
+</div>
+</center>
+<! End Modal--->
+
+<script>
+
+function demo(a)
+{
+var modal=document.querySelector("#modal")
+modal.style.display="block"
+document.querySelector("#myVideo").src=a.src;
+}
+
+</script>
+</body>
+</html>
+

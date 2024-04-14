@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head></head>
+    <body>
+         num1        <input type="text" id="t1"/></br>
+         num2        <input type="text" id="t2"/></br>
+         msg         <input type="text" id="msg"></br>
+                 
+         <button id="res" onclick="add()">+</button>
+         <button id="res">-</button>
+         <button id="res">*</button>
+         <button id="res">/</button>
+    <script>
+        var add=()=>
+        {
+        var msg=document.getElementById("msg")
+        var x=document.getElementById("t1").value
+        var y=document.getElementById("t2").value
+        var res=Number(x)+Number(y);
+        msg.innerText=""+res;
+    }
+
+    </script>
+    </body>
+
+</html>

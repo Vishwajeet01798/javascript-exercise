@@ -1,0 +1,31 @@
+<html>
+<head></head>
+<body>
+Name	<input type="text" 		required id="txt1"/></br></br>
+Email	<input type="email" 	required id="txt2"/></br></br>
+Number	<input type="number" 		required id="txt3"/></br></br>
+		<input type="button" 	onclick="demo()" value="GetValue"/>
+		<br></br>
+		<div>
+		<br></br>
+		<button onclick="demo1()">Print Data </button>
+		<div>
+	
+		</body>
+		<script>
+function demo()
+{
+var name=document.querySelector("#txt1").value
+var email=document.querySelector("#txt2").value
+var number=document.querySelector("#txt3").value
+document.querySelector("div").innerHTML=`Name is :${name}</br>
+Email is :${email}</br>Number is : ${number}`
+}
+ function demo1() 
+ { 
+ var dvalue=document.querySelector("div").innerHTML 
+ document.body.innerHTML=dvalue
+ window.print() 
+ } 
+</script>
+</html>

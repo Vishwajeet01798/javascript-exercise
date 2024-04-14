@@ -1,0 +1,24 @@
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+First No:<br/><input type="text" id="text1" /><br/>
+Secod No:<br/><input type="text" id="text2" /><br/>
+<p id="msg"></p>
+<button onclick="add()">Add</button>
+<script>
+var add=()=>
+{
+var t1=document.getElementById("text1").
+var t2=document.getElementById("text2").value
+var res=Number(t1)+Number(t2)
+//document.write("Result is: "+res)// (+ is use for concat )
+document.getElementById("msg").innerText="Result is : "+res;
+document.getElementById("msg").style.color="red";
+}
+add()
+</script>
+</body>
+</html>

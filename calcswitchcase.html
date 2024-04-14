@@ -1,0 +1,74 @@
+<html>
+<head></head>
+<html>
+<head>
+<style>
+#msg{
+height:30px;
+width:150px;
+border:1 px solid black;
+}
+#outer{
+height:500px;
+width:380px;
+border:1px solid black;
+padding-left:70px;
+padding-top:20px;
+box-sizing:border-box;
+background:Grey;
+margin:100px auto;
+border-radius:10px;
+color:white;
+}
+input{
+height:40px;
+width:250px;
+}
+.a{
+height:40px;
+width:60px;
+}
+</style>
+</head>
+<body><div id="outer"><b style="font-size:25px; text-align:center;">
+<br/>CALCULATER</b><br/><br/>
+ENTER YOUR FIRST NUMBER
+<br/><input type="text" id="txt1"/><br/><br/><br/>ENTER YOUR SECOND NUMBER
+<br/><input type="text" id="txt2"/><br/><br/><br/>
+Result<br/><input type="text" id="result"/><br/><br/><br/>
+
+<button class="a" onclick="demo(1);">+</button>
+<button class="a" onclick="demo(2);">-</button>
+<button class="a" onclick="demo(3);">*</button>
+<button class="a" onclick="demo(4);">/</button>
+
+</div>
+<script>
+
+function demo(choice)
+{
+ var n1=document.getElementById("txt1").value;
+ var n2=document.getElementById("txt2").value;
+ var fresult;
+ switch(choice)
+ {
+ case 1:
+ fresult=Number(n1)+Number(n2);
+ break;
+ case 2:
+ fresult=n1-n2;
+ break;
+ case 3:
+ fresult=n1*n2;
+ break;
+ case 4:
+ fresult=n1/n2;
+ break;
+ }
+ document.getElementById("result").value= fresult;
+}
+
+</script>
+</body>
+</html>
+</html>

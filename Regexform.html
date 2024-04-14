@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myForm" action="file:///C:/Users/HP/Desktop/techbootsrap/Ecommercesite.html" method="post" onsubmit="return validate_form()">
+        Name: <input type="text" name="name"><br><br>
+        Email: <input type="text" name="email"><br><br>
+        Password: <input type="password" name="password1"><br><br>
+        Confirm Password: <input type="password" name="password2"><br><br>
+
+        <input type="submit" value="SUBMIT">
+
+    </form>
+</body>
+<script>
+    function validate_form(){
+        let name= document.myForm.name.value;
+        if(name==null || name=="");
+        {
+        alert("Fields can't be empty ");
+        return false;
+    }
+    //email validation
+
+    let x= document.myForm.email.value;
+    let atPosition= x.indexOf("@");
+    let dotPosition= x.lastIndexOf(".");
+
+    if(atPosition<1 || dotPosition<atPosition+2 || dotPosition+2>=x.length){
+        alert("Please enter a valid email");
+        return false;
+    }
+
+    //Retype password validation
+    let firstPassword= document.myForm.password1.value;
+    let secondPassword= document.myForm.password2.value;
+
+    if(firstPassword == secondPassword){
+
+         //javascript regex password pattern
+    // strong password validation
+
+    let pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/g;
+    let pass= document.myForm.password1.value;
+    let t= pattern.test(pass);
+    if(t==true){
+    return true;
+    }
+        else {
+    alert("Weak Password")
+    return false;
+}
+    }else{
+        alert("password must be same");
+        return false;
+    }
+    }
+
+
+</script>
+</html>

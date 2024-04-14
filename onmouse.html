@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+<button onclick="demo1(),demo2(),demo3()">Click Me</button>
+<script>
+var element=document.querySelector("button")
+//element.addEventListner("mouseleave",demo)
+element.addEventListner("click",demo1)
+element.addEventListner("click",demo2)
+element.addEventListner("click",demo3)
+function demo1()
+{
+alert("ok")
+}
+function demo2()
+{
+alert("YEs")
+}
+function demo3()
+{
+alert("GO")
+}
+</script>
+</body>
+</html>

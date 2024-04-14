@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+I am agreed to <a href="#">Terms & Condition</a>
+<input type="checkbox" onchange="demo(this)"></></br></br>
+<button disabled>SAVE</button>
+</body>
+<script>
+function demo(x)
+{
+var btn=document.querySelector("button")
+if(x.checked==true)
+{
+btn.removeAttribute("disabled")
+}
+else
+{
+btn.setAttribute("disabled","disabled")
+}
+}
+</script>
+</html>

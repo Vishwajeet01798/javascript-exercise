@@ -1,0 +1,40 @@
+<html>
+<head>
+</head>
+<body>
+<p>Welcome to Lucknow</p>
+<input type="text"/>
+</body>
+<script>
+<!-- window.addEventListener("cut",function() -->
+<!-- { -->
+<!-- alert("Cut disabled here") -->
+<!-- event.preventDefault() -->
+<!-- }) -->
+<!-- window.addEventListener("paste",function() -->
+<!-- { -->
+<!-- alert("paste disabled here") -->
+<!-- event.preventDefault() -->
+<!-- }) -->
+<!-- window.addEventListener("copy",function() -->
+<!-- { -->
+<!-- alert("copy option disabled") -->
+<!-- event.preventDefault() -->
+<!-- }) -->
+<!-- window.addEventListener("contextmenu",function() -->
+<!-- { -->
+<!-- alert("right option disabled") -->
+<!-- event.preventDefault() -->
+<!-- }) -->
+
+function demo()
+{
+alert("right click,copy,cut,paste disabled here..")
+event.preventDefault()
+}
+window.addEventListener("copy",demo)
+window.addEventListener("paste",demo)
+window.addEventListener("cut",demo)
+window.addEventListener("contextmenu",demo)
+</script>
+</html>

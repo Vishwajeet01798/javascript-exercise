@@ -1,0 +1,39 @@
+<html>
+<head>
+</head>
+<body>
+<input type="password" id="pass"/></br></br>
+<input type="button" onclick="demo(this)" id="btn" value="show"></>
+</body>
+<script>
+let demo=()=>
+{
+var pass=document.querySelector("#pass")
+var btn=document.querySelector("#btn")
+if(pass.value!=="")
+{
+if(btn.value=="show")
+{
+btn.value="hide"
+pass.type="text"
+btn.style.background="Red"
+}
+else
+{
+pass.type="password"
+btn.value="show"
+btn.style.background="Green"
+}
+}
+else
+{
+alert("Enter your pasword")
+}
+}
+window.addEventListener("cut",demo(){
+alert("cut disabled")
+event.preventDefault(pass)
+})
+
+</script>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body>
+<h1></h1>
+<p class="a">PARA1</p>
+<p class="a">PARA2</p>
+<p class="a">PARA3</p>
+<p class="a">PARA4</p>
+</body>
+<script>
+var c=document.getElementsByClassName("a")
+var res="<ul>"
+for(var i=0;i<c.length;i++)
+{
+res+="<li>"+c[i].innerText+"</li>"
+alert(res)
+}
+res+="</ul>"
+document.querySelector("h1").innerHTML=res
+</script>
+</html>

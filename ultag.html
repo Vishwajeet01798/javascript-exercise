@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+<button onclick=demo()>CLICK</button>
+<p></p>
+<script>
+let demo=()=>
+{
+var arr=["HTML","CSS","C","BOOTSTRAP"]
+var res=("<ul>")
+for(var i of arr)
+{
+res=res+"<li>"+i+"</li>"
+}
+res=res+"</ul>"
+document.querySelector("p").innerHTML=res;
+}
+</script>
+</body>
+</html>

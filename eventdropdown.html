@@ -1,0 +1,39 @@
+<html>
+<head>
+</head>
+<body>
+<select>
+<option>HTML</option>
+<option>CSS</option>
+<option>JS</option>
+<option>Java</option>
+</select>
+<script>
+ <!-- function demo()  -->
+ <!-- {  -->
+ <!-- var x=document.querySelector("select").value -->
+ <!-- alert(x) -->
+ <!-- } -->
+ <!-- document.querySelector("select").addEventListner("change",demo())  -->
+ <!-- document.querySelector("select"). -->
+ <!-- addEventListener("change",function(){ -->
+ <!-- var x=document.querySelector("select").value -->
+ <!-- alert(x) -->
+ <!-- }) -->
+
+function demo()
+{
+alert(this.value)
+this.style.border="10px solid red"
+}
+document.querySelector("select").
+addEventListener("change",demo)
+
+</script>
+</body>
+</html>
+
+
+
+
+

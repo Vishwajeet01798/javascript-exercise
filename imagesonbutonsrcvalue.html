@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+img
+{
+height:200px;
+width:300px;
+border:5px solid blue;
+}
+</style>
+</head>
+<body>
+<img id="a" src="images/a.jpg"/>
+<img src="images/b.jpg"/>
+<img src="images/c.jpeg"/>
+<button onclick="demo()">CLICK ME</button>
+<script>
+function demo()
+{
+<!-- document.images -->
+<!-- var x=document.images.item(2).src -->
+<!-- var x=document.images.namedItem("a").src alert(x) -->
+document.images.namedItem("a").src="images/d.jpg"
+
+}
+
+
+</script>
+</body>
+</html>

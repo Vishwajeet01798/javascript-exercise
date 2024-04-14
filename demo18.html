@@ -1,0 +1,17 @@
+<script>
+var arr=[]
+var c=["red","green","blue"]
+for(var i=0;i<=5;i++)
+{
+v=prompt("ENter your Item to add in array..")
+arr[i]=v
+}
+var res="<select>"
+for(var x of arr)
+{
+res+="<option>"+x+"</option>"
+}
+res+="</select>";
+document.write(res);
+
+</script>

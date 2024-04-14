@@ -1,0 +1,39 @@
+<html>
+<head>
+<style>
+#box
+{
+width:400px;
+background-color:blue;
+padding:15px;
+min-height:400px;
+border:5px solid black;
+box-sizing:border-box;
+margin:100px auto;
+font-size:22px;
+color:white;
+}
+</style>
+</head>
+<body>
+<div id="box">
+<input type="text" placeholder="Enter First Num" id="txt1" style="margin-top:50px;width:200px;"/><br/>
+<input type="text" placeholder="Enter Second Num" id="txt2" style="margin-top:20px;width:200px;"/><br/>
+<input type="text" placeholder="Message" id="msg" style="margin-top:20px;"/><br/>
+<button onclick="add()" style="margin-top:20px;"/>+</button>
+<button onclick="demo()" style="margin-top:20px; margin-left:20px;"/>-</button>
+<button onclick="demo()" style="margin-top:20px; margin-left:20px;"/>*</button>
+<button onclick="demo()" style="margin-top:20px; margin-left:20px;"/>/</button>
+<script>
+var add=()=>
+{
+var msg=document.getElementById("msg")
+var n1=document.getElementById("txt1").value
+var n2=document.getElementById("txt2").value
+var res=Number(n1)+Number(n2);
+msg.innerText=""+res;
+}
+
+</div>
+</script>
+</body>

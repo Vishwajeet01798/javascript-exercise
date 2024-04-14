@@ -1,0 +1,90 @@
+<html>
+<head></head>
+<html>
+<head>
+<style>
+#msg{
+height:30px;
+width:150px;
+border:1 px solid black;
+}
+#outer{
+height:500px;
+width:380px;
+border:1px solid black;
+padding-left:70px;
+padding-top:20px;
+box-sizing:border-box;
+background:blue;
+margin:100px auto;
+border-radius:10px;
+color:white;
+}
+input{
+height:40px;
+width:250px;
+}
+.a{
+height:40px;
+width:60px;
+}
+</style>
+</head>
+<body><div id="outer"><b style="font-size:25px; text-align:center;">
+<br/>CALCULATER</b><br/><br/>
+ENTER YOUR FIRST NUMBER
+<br/><input type="text" id="txt1"/><br/><br/><br/>ENTER YOUR SECOND NUMBER
+<br/><input type="text" id="txt2"/><br/><br/><br/>
+<button id="msg">RESULT</button><br/><br/><br/>
+<button class="a" onclick="add()">+</button>
+<button class="a" onclick="sub()">-</button>
+<button class="a" onclick="mul()">*</button>
+<button class="a" onclick="div()">/</button>
+
+</div>
+<script>
+var add=()=>
+{
+var r=confirm("Are you sure to want addition ?")
+if(r==true)
+var msg=document.getElementById("msg")
+var x=document.getElementById("txt1").value
+var y=document.getElementById("txt2").value
+var res=Number(x)+Number(y);
+msg.innerText=""+res;
+}
+var sub=()=>
+{
+var r=confirm("Are you sure to want Subtraction ?")
+if(r==true)
+var msg=document.getElementById("msg")
+var x=document.getElementById("txt1").value
+var y=document.getElementById("txt2").value
+var res=Number(x)- Number(y);
+msg.innerText=""+res;
+}
+var mul=()=>
+{
+var r=confirm("Are you sure to want Multiplication ?")
+if(r==true)
+var msg=document.getElementById("msg")
+var x=document.getElementById("txt1").value
+var y=document.getElementById("txt2").value
+var res=Number(x)* Number(y);
+msg.innerText=""+res;
+}
+var div=()=>
+{
+var r=confirm("Are you sure to want Division ?")
+if(r==true)
+var msg=document.getElementById("msg")
+var x=document.getElementById("txt1").value
+var y=document.getElementById("txt2").value
+var res=Number(x)/ Number(y);
+msg.innerText=""+res;
+}
+
+</script>
+</body>
+</html>
+</html>

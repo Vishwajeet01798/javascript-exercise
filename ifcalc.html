@@ -1,0 +1,40 @@
+<html>
+<head>
+</head>
+<body>
+first Number<input id="text1" type="text"/></br>
+Second Number<input id="text2" type="text"/></br>
+Result <input id="result" type="text"/></br>
+
+<button onclick="demo()" value="+">+</button>
+<button onclick="demo()" value="-">-</button>
+<button onclick="demo()" value="*">*</button>
+<button onclick="demo()" value="/">/</button>
+</body>
+<script>
+function demo()
+{
+var n1=document.getElementById("text1").value;
+var n2=document.getElementById("text2").value;
+var result=document.getElementById("result").value;
+if(result == '+')
+{
+	var result=parseInt(n1)+ parseInt(n2);
+}
+if(result == '-')
+{
+	var result=parseInt(n1)- parseInt(n2);
+}
+if(result == '*')
+{
+	var result=parseInt(n1)* parseInt(n2);
+}
+if(result == '/')
+{
+	var result=parseInt(n1)/ parseInt(n2);
+}
+	document.getElementById("result").value=result;
+}
+</script>
+
+</html>

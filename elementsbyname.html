@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<body>
+<p name="a">HTML</p>
+<p name="b">CSS</p>
+<p name="a">JQUERY</p>
+<p name="a">JS</p>
+<p name="b">MOngo</p>
+<div></div>
+<button onclick="demo()">Click ME</button>
+</body>
+<script>
+function demo()
+{
+var x=document.getElementsByName("a")
+var r="<select>"
+x.forEach((c)=>{
+r=r+"<option>"+c.innerText+"<option>"
+alert(r)
+})
+r+="<select>"
+document.querySelector("div").innerHTML=r;
+}
+</script>
+</body> 
+</html>

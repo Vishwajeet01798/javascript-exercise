@@ -1,0 +1,33 @@
+<html>
+<head>
+<style>
+p
+{
+background-color:navy;
+color:white;
+font-size:30px;
+display:none;
+}
+</style>
+</head>
+<body>
+<!-- <h1><b>ECOSYSTEM</b></h1> -->
+<button onclick="demo()">^</button></br>
+<p id="hide">Decreased production and increased costs: Food production and
+ distribution have not been able to catch up with the increasing population
+ and hence the costs of production have increased. Inflation is the major 
+ consequence of over population.Inequitable income distribution: In the
+ face of an increasing population, there is an unequal distribution of income and
+ inequalities within the country widen. Due to excessive number of individuals,
+ the job is not valued appropriately which could significantly bring down the 
+ value of the skill.</p>
+</body>
+<script>
+var demo=()=>
+{
+var x=confirm("Sure want to hide?")
+if(x==true)
+document.querySelector("hide").style.display="block"
+}
+</script>
+</html>

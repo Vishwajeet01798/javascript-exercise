@@ -1,0 +1,42 @@
+<html>
+<head>
+<style>
+#box
+{
+height:300px;
+width:600px;
+border:20px groove aqua;
+border-radius:10px;
+color:brown;
+text-align:center;
+line-height:500px;
+font-size:60px;
+font-family:impact;
+margin:0px auto;
+background:url("images/a.jpg")
+}
+</style>
+</head>
+<body>
+<center>
+<h1>Slider</h1>
+<hr/>
+</center>
+<div id="box">Message</div>
+<script>
+var arr=["b.jpg","d.jpg","d.jpg",]
+var i=0
+function slider()
+{
+var dv=document.querySelector("#box")
+dv.style.background="url('images/"+arr[i]+"')"
+dv.style.backgroundSize="cover"
+dv.innerText=txt[i]
+i++
+if(i==arr.length)
+i=0
+}
+window.setInterval(slider,3000)
+</script>
+</body>
+</html>
